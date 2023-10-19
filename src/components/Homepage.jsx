@@ -15,7 +15,7 @@ function Homepage() {
       person.name.toLowerCase().includes(searchName.toLowerCase())
     );
 
-    if (filteredResults.length === 0 && searchName.length === 0) {
+    if (filteredResults.length === 0 || searchName.length === 0) {
       // If no results found, set nameNotFound to true
       setNameNotFound(true);
     } else {
